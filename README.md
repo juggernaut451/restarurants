@@ -9,22 +9,20 @@ Install mongodb(community edition)
 https://docs.mongodb.com/manual/administration/install-community/
 
 Let's start mongo
-sudo service mongod start
 
-// mongo shell
-mongo
+> sudo service mongod start
 
-use fueled
+mongo shell
 
-db.restaurants.createIndex({ location: "2dsphere"})
-
-exit
+> mongo
+> use fueled
+> db.restaurants.createIndex({ location: "2dsphere"})
+> exit
 
 //Project start
 // go into the project folder
 npm i
 npm run dev
-
 
 ## User details (Dummy)
 
