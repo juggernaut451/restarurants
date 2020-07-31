@@ -1,0 +1,42 @@
+{
+  "name": "restaurant_service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "lint": "./node_modules/.bin/eslint .",
+    "lint:fix": "./node_modules/.bin/eslint --fix .",
+    "prettier": "prettier --write \"**/*.js\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.4",
+    "shortid": "^2.2.14",
+    "underscore": "^1.10.2",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^1.19.1",
+    "prettier": "^2.0.5"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "node_modules/*",
+      "logs/*"
+    ],
+    "env": {
+      "MONGO": "mongodb://localhost:27017/fueled?readPreference=primary",
+      "PORT": 3000,
+      "RANGE": 30
+    }
+  }
+}
