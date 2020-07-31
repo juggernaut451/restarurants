@@ -29,6 +29,19 @@ mongo shell
 
 > npm run dev
 
+#### Setup dummy user
+
+> POST http://localhost:3000/api/setup/user
+
+#### Setup dummy restaurants
+
+> POST http://localhost:3000/api/setup/restaurant
+
+### Postman Collection
+
+##### Open postman. Then import restaurants.postman_collection.json
+
+
 ## User details (Dummy)
 
 #### Ram -> 5f201e502a12332902e1b8b7
