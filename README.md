@@ -3,7 +3,8 @@
 ## Setup
 
 Install nodejs (version 12 - LTS)
-https://nodejs.org/en/download/package-manager/
+
+> https://nodejs.org/en/download/package-manager/
 
 Install mongodb(community edition)
 https://docs.mongodb.com/manual/administration/install-community/
@@ -15,14 +16,18 @@ Let's start mongo
 mongo shell
 
 > mongo
+
 > use fueled
+
 > db.restaurants.createIndex({ location: "2dsphere"})
+
 > exit
 
-//Project start
-// go into the project folder
-npm i
-npm run dev
+#### Start Project
+
+> npm i
+
+> npm run dev
 
 ## User details (Dummy)
 
